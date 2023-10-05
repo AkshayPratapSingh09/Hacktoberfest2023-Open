@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            background: #950066;
+        }
+        
+        #app {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 200px);
+            padding: 24px;
+            gap: 24px;
+        }
+        
+        .note {
+            height: 200px;
+            box-sizing: border-box;
+            padding: 16px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+            resize: none;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        
+        .add-note {
+            height: 200px;
+            border: none;
+            outline: none;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-size: 120px;
+            color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .add-note:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky notes</title>
+    <div id="app">
+        <button class="add-note" type="button">+</button>
+    </div>
+</head>
+
+<body>
+    <script>
+        const notesContainer = document.getElementById("app");
+        const addNoteButton = notesContainer.querySelector(".add-note");
+
+        getNotes().forEach((note) => {
+            const noteElement = createNoteElement(note.id, note.content);
+            notesContainer.insertBefore(noteElement, addNoteButton);
+        });
+
+        addNoteButton.addEventListener("click", () => addNote());
+
+        function getNotes() {
+            return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
+        }
+
+        function saveNotes(notes) {
+            localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
+        }
+
+        function createNoteElement(id, content) {
+            const element = document.createElement("textarea");
+
+            element.classList.add("note");
+            element.value = content;
+            element.placeholder = "Empty Sticky Note";
+
+            element.addEventListener("change", () => {
+                updateNote(id, element.value);
+            });
+
+            element.addEventListener("dblclick", () => {
+                const doDelete = confirm(
+                    "Are you sure you wish to delete this sticky note?"
+                );
+
+                if (doDelete) {
+                    deleteNote(id, element);
+                }
+            });
+
+            return element;
+        }
+
+        function addNote() {
+            const notes = getNotes();
+            const noteObject = {
+                id: Math.floor(Math.random() * 100000),
+                content: ""
+            };
+
+            const noteElement = createNoteElement(noteObject.id, noteObject.content);
+            notesContainer.insertBefore(noteElement, addNoteButton);
+
+            notes.push(noteObject);
+            saveNotes(notes);
+        }
+
+        function updateNote(id, newContent) {
+            const notes = getNotes();
+            const targetNote = notes.filter((note) => note.id == id)[0];
+
+            targetNote.content = newContent;
+            saveNotes(notes);
+        }
+
+        function deleteNote(id, element) {
+            const notes = getNotes().filter((note) => note.id != id);
+
+            saveNotes(notes);
+            notesContainer.removeChild(element);
+        }
+    </script>
+</body>
+
+</html>
