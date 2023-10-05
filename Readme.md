@@ -4,10 +4,10 @@
     <img src="https://hacktoberfest.com/_next/static/media/opengraph.e5fafe07.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Accepting Hacktoberfest2023 PR's</h3>
+  <h3 align="center">🌟🌟Accepting Hacktoberfest2023 PR's 🌟🌟</h3>
 
   <p align="center">
-    Accepting Open-Source Contribution for Hacktoberfest 2023
+    🍀Accepting Open-Source Contribution for Hacktoberfest 2023🍀
     <br/>
     <br/>
   </p>
