@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+}
+body {
+    background-color: #f6f8fa;
+  }
+.top{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Photos/mainBackground.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 125vh;
+  position: relative;
+    
+    
+}
+header img{
+    height: 40px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:25px 0;
+    font-size: 18px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    margin-right: 40px;
+}
+header li{
+    padding-left: 50px;
+}
+section.top hr{
+    width: 85%;
+    margin-left: 100px;
+}
+section.top div{
+    color: white;
+    margin-left: 130px;
+}
+section.top h1{
+    font-size: 70px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+section.top p{
+    font-weight: 500;
+    font-size: 20px ;
+}
+ button{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 18px;
+    background: rgb(102, 99, 233);
+    border-style: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+section.logo{
+    background-color: #fff;
+  margin: 0 35px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  position: relative;
+  bottom: 100px;
+}
+section.hero h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+div.card img{
+    height: 400px;
+    width: 350px;
+    border-radius: 10%;
+}
+div.allcard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+div.cardbox{
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    font-size: 20px;
+    padding-left: 20px;
+    height: 100px;
+    padding-top: 20px;
+    position: relative;
+    bottom:60px;
+    left: 25px;
+}
+div.card button{
+    position: relative;
+    bottom: 170px;
+    left: 50px;
+}
+div.cardbox p{
+    color: rgb(102, 99, 233);
+    font-weight: bold;
+}
+section.hero{
+    margin-left: 100px;
+}
+.features-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+  }
+  
+  .features-section div {
+    width: 50%;
+  }
+  
+  .first-feature-section div:first-child img:first-child {
+    position: absolute;
+    left: -80px;
+    z-index: -1;
+    width: 726px;
+    height: 456px;
+  }
+  
+  .features-section div:first-child img:last-child {
+    position: relative;
+    width: 405px;
+    height: 405px;
+    border-radius: 51px;
+    bottom: 55px;
+    left: 110px;
+  }
+  
+  /* designing the second div of feature box */
+  .features-section h1 {
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+  }
+  
+  .features-section p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #585c65;
+    margin-bottom: 40px;
+    max-width: 80%;
+  }
+  
+  .features-section button {
+    font-weight: 700;
+  }
+  
+  /* designing the second feature section */
+  .second-feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second-feature-section div {
+    width: 50%;
+  }
+  
+  .second-feature-section div:last-child{
+      position: relative;
+  }
+  
+  .second-feature-section div:last-child img:first-child {
+    position: absolute;
+    right: 0;
+    width: 726px;
+    height: 456px;
+    bottom: -220px;
+  }
+  
+  .second-feature-section div:last-child img:last-child {
+    position: absolute;
+    width: 405px;
+    height: 405px;
+    border-radius: 51px;
+    right: 135px;
+    bottom: -110px;
+  }
+  
+  .second-feature-section div:first-child {
+    padding: 0 50px;
+  }
+  
+  .second-feature-section div:first-child h1 {
+    width: 90%;
+  }
+
+section.subscribe{
+    background-color:  rgb(102, 99, 233);
+    color: white;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 70px;
+}
+section.subscribe h1{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+section.subscribe p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+input{
+    background-color: transparent;
+    border: none;
+}
+div.form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #5654d1;
+    border-radius: 40px;
+    width: 468px;
+    height: 61px;
+    padding: 0 20px;
+}
+section.subscribe button{
+    background: #ffffff;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 40px;
+  width: 174px;
+  height: 61px;
+  color: #6663e9;
+
+}
+footer {
+
+    display: flex;
+    align-items: flex-start;
+    margin:  100px 100px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  
+  footer div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  footer div:first-child img {
+    width: 150px;
+  }
+  
+  footer div:first-child div img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  
+  footer div:first-child p {
+    width: 323px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  /* designing the footer links */
+  .footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 120px;
+  }
+  .footer-links-content li{
+    list-style: none;
+  }
+  .footer-links-content a{
+    text-decoration: none;
+  }
+  .footer-links-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-links-content ul li a {
+    color: black;
+    list-style: none;
+  }
+  
+  .footer-links-content ul li:first-child {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .footer-links-content ul li{
+      margin-bottom: 25px;
+  }
