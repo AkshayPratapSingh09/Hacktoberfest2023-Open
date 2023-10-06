@@ -1,0 +1,1 @@
+print("Hello, HacktoberFest 2023! This is a repository intended for examples of Hello World in various programming languages.")
