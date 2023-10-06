@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color white
+drawable background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnSpeak
+id etEnteredText
+id tvspeech
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.TextToSpeech
+style Theme.TextToSpeech
+xml backup_rules
+xml data_extraction_rules
