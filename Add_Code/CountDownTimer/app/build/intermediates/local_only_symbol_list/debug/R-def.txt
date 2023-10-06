@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color myHintColor
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnPause
+id btnStart
+id btnStop
+id tvTimer
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.CountDownTimer
+style Theme.CountDownTimer
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color mapboxBlue
+color mapboxGrayLight
+color mapboxWhite
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id mapView
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string mapbox_access_token
+style Base.Theme.MapBoxDemo
+style Theme.MapBoxDemo
+xml backup_rules
+xml data_extraction_rules

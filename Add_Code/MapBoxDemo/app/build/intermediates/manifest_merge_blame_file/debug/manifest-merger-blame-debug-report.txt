@@ -1,0 +1,154 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mapboxdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:7:22-64
+14
+15    <uses-feature
+15-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:10:5-12:35
+16        android:glEsVersion="0x00020000"
+16-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:11:9-41
+17        android:required="true" />
+17-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:12:9-32
+18    <uses-feature
+18-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:13:5-15:36
+19        android:name="android.hardware.wifi"
+19-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:14:9-45
+20        android:required="false" />
+20-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:15:9-33
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:18:5-79
+22-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:18:22-76
+23    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+23-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:19:5-76
+23-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:19:22-73
+24
+25    <permission
+25-->[androidx.core:core:1.10.1] C:\Users\vidye\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+26        android:name="com.example.mapboxdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.10.1] C:\Users\vidye\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.10.1] C:\Users\vidye\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.example.mapboxdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.10.1] C:\Users\vidye\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.10.1] C:\Users\vidye\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:8:5-27:19
+32        android:allowBackup="true"
+32-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:9:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.10.1] C:\Users\vidye\.gradle\caches\transforms-3\7810e8761aa3025c239028b0b49ad789\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+34        android:dataExtractionRules="@xml/data_extraction_rules"
+34-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:10:9-65
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:fullBackupContent="@xml/backup_rules"
+37-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:11:9-54
+38        android:icon="@mipmap/ic_launcher"
+38-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:12:9-43
+39        android:label="@string/app_name"
+39-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:13:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:14:9-54
+41        android:supportsRtl="true"
+41-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:15:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.MapBoxDemo" >
+43-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:16:9-48
+44        <activity
+44-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:18:9-26:20
+45            android:name="com.example.mapboxdemo.MainActivity"
+45-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:19:13-41
+46            android:exported="true" >
+46-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:20:13-36
+47            <intent-filter>
+47-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:21:13-25:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:22:17-69
+48-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:22:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:24:17-77
+50-->C:\Users\vidye\AndroidStudioProjects\MapBoxDemo\app\src\main\AndroidManifest.xml:24:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <provider
+54-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:22:9-30:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:23:13-67
+56            android:authorities="com.example.mapboxdemo.androidx-startup"
+56-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:24:13-68
+57            android:exported="false" >
+57-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:25:13-37
+58            <meta-data
+58-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:27:13-29:52
+59                android:name="com.mapbox.maps.loader.MapboxMapsInitializer"
+59-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:28:17-76
+60                android:value="androidx.startup" />
+60-->[com.mapbox.maps:android-core:10.13.1] C:\Users\vidye\.gradle\caches\transforms-3\05bb8e945fb3abad07d770c7a4a28451\transformed\android-core-10.13.1\AndroidManifest.xml:29:17-49
+61            <!-- This entry makes MapboxSDKCommonInitializer discoverable. -->
+62            <meta-data
+62-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:21:13-23:52
+63                android:name="com.mapbox.common.MapboxSDKCommonInitializer"
+63-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:22:17-76
+64                android:value="androidx.startup" />
+64-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:23:17-49
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\vidye\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\vidye\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\vidye\.gradle\caches\transforms-3\d1735c872afea04148904d9dcaaead07\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\vidye\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\vidye\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\vidye\.gradle\caches\transforms-3\13e497b7eaaadcc2b20f8c9992f4a897\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+71        </provider>
+72
+73        <receiver
+73-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:26:9-33:20
+74            android:name="com.mapbox.common.location.LocationUpdatesReceiver"
+74-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:27:13-78
+75            android:enabled="true"
+75-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:28:13-35
+76            android:exported="false" >
+76-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:29:13-37
+77            <intent-filter>
+77-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:30:13-32:29
+78                <action android:name="com.mapbox.common.location.LocationUpdatesReceiver.ACTION_PROCESS_LOCATION_UPDATES" />
+78-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:31:17-125
+78-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:31:25-122
+79            </intent-filter>
+80        </receiver>
+81
+82        <service
+82-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:35:9-37:40
+83            android:name="com.mapbox.common.LifecycleService"
+83-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:36:13-62
+84            android:exported="false" />
+84-->[com.mapbox.common:common:23.5.0] C:\Users\vidye\.gradle\caches\transforms-3\c71e09098df6dc91e07231e3978ba7bb\transformed\common-23.5.0\AndroidManifest.xml:37:13-37
+85    </application>
+86
+87</manifest>

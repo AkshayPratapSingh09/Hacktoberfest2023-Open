@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.mapboxdemo.app-mergeDebugResources-35:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vidye\\.gradle\\caches\\transforms-3\\558e8d9b27b3ef1f19c48e98e25708f5\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
