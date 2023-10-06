@@ -1,5 +1,5 @@
 ---
-Name: YOUR_NAME
-Institution/Org : INSTITUTION_NAME
-Github :USER_NAME
+Name: Draksham Tharun
+Institution/Org : Indian Institute of Information Technology Lucknow
+Github :draksham
 ---
