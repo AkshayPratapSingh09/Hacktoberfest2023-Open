@@ -1,5 +1,5 @@
 ---
-Name: YOUR_NAME
-Institution/Org : INSTITUTION_NAME
-Github :USER_NAME
+Name: Yelluri Vidyendra
+Institution/Org : Indian Institute Of Information Technology , Lucknow
+Github :  yellurividyendra
 ---
