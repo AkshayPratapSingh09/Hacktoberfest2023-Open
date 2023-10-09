@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.texttospeech.app-mergeDebugResources-27:/layout/activity_main.xml",
+        "source": "com.example.texttospeech.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidye\\.gradle\\daemon\\8.0\\com.example.texttospeech.app-mergeDebugResources-27:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\vidye\\.gradle\\daemon\\8.0\\com.example.texttospeech.app-main-30:\\layout\\activity_main.xml"
+    }
+]

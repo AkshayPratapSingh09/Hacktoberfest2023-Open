@@ -1,0 +1,43 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username below.
+                // This should always be `mapbox` (not your username).
+                username = "mapbox"
+                // Use the secret token you stored in gradle.properties as the password
+                password = "sk.eyJ1IjoieWVsbHVyaXZpZHllbmRyYTA5IiwiYSI6ImNsaTFtcG9jZDA1c3AzZHBnOGFxeXczbWgifQ.jNb9Sm8Y-zXy_ouW6t6ZuQ"
+            }
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                // Do not change the username below.
+                // This should always be `mapbox` (not your username).
+                username = "mapbox"
+                // Use the secret token you stored in gradle.properties as the password
+                password = "sk.eyJ1IjoieWVsbHVyaXZpZHllbmRyYTA5IiwiYSI6ImNsaTFtcG9jZDA1c3AzZHBnOGFxeXczbWgifQ.jNb9Sm8Y-zXy_ouW6t6ZuQ"
+            }
+        }
+    }
+}
+rootProject.name = "MapBoxDemo"
+include ':app'
