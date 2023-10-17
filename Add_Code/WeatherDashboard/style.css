@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("Images/dusk.jpg") ;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #49c5ac, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding:10px 25px;
+    height:60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 25px;
+}
+.weather-icon{
+    width: 100px;
+    margin-top: 30px;
+    
+}
+.weather h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity{
+    font-size: 20px;
+    margin-top: -6px;
+}
+.wind{
+    font-size: 20px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left:10px ;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .search {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search input {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .search button {
+      width: 100px;
+      height: 100px;
+      margin-right: 0;
+    }
+
+    .search button img{
+        width: 35px;
+    }
+  }
+  
+  
+  
