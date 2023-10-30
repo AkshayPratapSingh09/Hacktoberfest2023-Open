@@ -3,7 +3,6 @@
 # Initialize the board
 board = [" " for _ in range(9)]
 
-# Function to print the Tic Tac Toe board
 def print_board():
     print(f"{board[0]} | {board[1]} | {board[2]}")
     print("---------")
